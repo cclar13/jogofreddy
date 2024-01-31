@@ -1,0 +1,68 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.gamebord {
+    width: 100%;
+    height: 500px;
+    border: 8px solid rgb(47, 47, 47);
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#b81414,black );
+}
+
+.abobora {
+    position: absolute;
+    bottom: -3%;
+    width: 100px;
+    right: 0%;
+    animation: aboboragamer 1s infinite linear;
+}
+
+.freddy {
+    width: 310px;
+    position: absolute;
+    bottom: -15%;
+    /* bottom: 10px; */
+}
+.freddyover{
+    width: 100px;
+}
+.freddyjump {
+    animation: freddyjump 600ms ease-out;
+}
+
+@keyframes aboboragamer {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes freddyjump {
+    0% {
+        bottom: -15%;
+    }
+
+    40% {
+        bottom: 20%;
+    }
+
+    50% {
+        bottom: 20%;
+    }
+
+    60% {
+        bottom: 15%;
+    }
+
+    100% {
+        bottom: -15%;
+    }
+}
